@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Layout_ConvtoolsActivity_takeout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  android:background="@color/conv_backgroud"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/ListView_ConvtoolsActivity_takeout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>

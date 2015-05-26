@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HotCityActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relative_newsshow_connect_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:id="@+id/imageview_newsshow_connect_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/image_no_service" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+       android:id="@+id/relative_newshow_default_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <ProgressBar
+           android:id="@+id/progressbar_newsshow_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             />
+
+        <ImageView
+            android:id="@+id/imageview_newsshow_defeault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/progressbar_newsshow_default"
+            android:src="@drawable/image_newspage_defeatlt" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relative_newsshow_title"
+        style="@style/sub_top_style" >
+
+        <ImageView
+            android:id="@+id/button_newsshow_title_back"
+            style="@style/returnbutton_style"/>
+
+        <TextView
+            android:id="@+id/manager_comp_sent_view"
+            style="@style/sub_top_text_style" 
+            android:text="@string/app_name"
+             />
+
+      <!--    <Button
+            android:id="@+id/button_newsshow_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/editpicture_selector" />   -->
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_newsshow_title" >
+
+        <RelativeLayout
+            android:id="@+id/relative_newsshow_scrolldown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:id="@+id/relative_newsshow_secondlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_newsshow_title"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:id="@+id/textview_newsshow_newstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_newsshow_newstimetip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/textview_newsshow_newstitle"
+                    android:layout_below="@id/textview_newsshow_newstitle"
+                    android:textColor="@color/black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:id="@+id/textview_newsshow_newstime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_newsshow_newstitle"
+                    android:layout_toRightOf="@id/textview_newsshow_newstimetip"
+                    android:textColor="@color/black"
+                    android:textSize="12dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_newsshow_thirdlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_newsshow_secondlay"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <RelativeLayout
+                    android:id="@+id/relative_newsshow_thirdlay_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/imageview_newsshow_pic"
+                        android:layout_width="443dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/image_newsshow_default" />
+
+                    <ProgressBar
+                        android:id="@+id/progressbar_newsshow_pic"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textview_newsshow_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relative_newsshow_thirdlay_image"
+                    android:textColor="@color/black"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

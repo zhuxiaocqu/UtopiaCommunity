@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageview_talk_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/manager"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageview_talk_receive"
+            android:paddingRight="15dip" >
+
+            <TextView
+                android:id="@+id/textview_talk_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatfrom_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center|left"
+                android:lineSpacingExtra="2dp"
+                android:paddingTop="15dip"
+                android:paddingBottom="20dip"
+                android:textColor="#000000"
+                android:textSize="18dip"
+                android:textStyle="bold"/>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotCityActivity"
+    android:background="@color/white" >
+     <RelativeLayout
+        android:id="@+id/relative_mana_conmu_info"
+        style="@style/sub_top_style"  >
+
+        <ImageView
+            android:id="@+id/ImageView_mana_conmu_info_back"
+            style="@style/returnbutton_style" />
+
+        <TextView
+            android:id="@+id/manager_mana_conmu_info_view"
+            style="@style/sub_top_text_style"          
+            android:text="@string/app_name"
+             />
+
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relative_mana_conmu_info_secondlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:layout_below="@id/relative_mana_conmu_info" >       
+     <TextView android:id="@+id/textview_mana_conmu_detailinfo" 
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content"
+             android:text="@string/text_mana_info_view" 
+             android:textColor="@color/black"
+             android:textSize="15dip" 
+            />
+            
+        <TextView
+             android:id="@+id/textview_mana_conmu_detailinfotime"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/textview_mana_conmu_detailinfo"
+             android:textSize="8dip" />
+
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:id="@+id/relative_mana_conmu_info_thirdlay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/relative_mana_conmu_info_secondlay"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip">
+
+            <ImageView
+                android:id="@+id/imageview_newsshow_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                 />
+
+            <TextView
+                android:id="@+id/textview_newsshow_cont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageview_newsshow_pic"
+             	android:textSize="12dip" 
+             	android:textColor="@color/black"
+             	/>
+
+        </RelativeLayout>
+</RelativeLayout>

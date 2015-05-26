@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/conv_backgroud"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="12dip" >
+
+                <ProgressBar
+                    android:id="@+id/ProcessBar_ConvToolsActivity_ListView_item_loadingimg"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/ImageView_ConvToolsActivity_ListView_item_img"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                     />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView_ConvToolsActivity_ListView_item_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:textSize="18dip"
+                        android:textColor="#fe6102" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/TextView_ConvToolsActivity_ListView_item_shopHours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dip" 
+                        android:textColor="#fe6102">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/TextView_ConvToolsActivity_ListView_item_phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dip"
+                        android:textColor="#fe6102" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/TextView_ConvToolsActivity_ListView_item_introduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="12dip" 
+                        android:textColor="#fe6102">
+                    </TextView>
+                </LinearLayout>
+   
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dip"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Button_ConvToolsActivity_ListView_item_dial"
+                style="@style/conv_listbutton_style"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="4dip"
+                android:text="@string/buttontext_takeout_call"
+                android:textColor="@color/white"
+                android:textSize="15dip" >
+            </Button>
+
+            <Button
+                android:id="@+id/Button_ConvToolsActivity_Takeout_look"
+                style="@style/conv_listbutton_style"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="8dip"
+                android:textColor="@color/white"
+                android:textSize="15dip" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

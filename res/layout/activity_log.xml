@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout
+        style="@style/sub_top_style" >
+
+        <ImageView
+            android:id="@+id/ImageView_LogActivity_quit"
+            style="@style/returnbutton_style"
+            android:layout_gravity="center"        
+             />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shugang"
+            android:paddingRight="2dip"
+            />
+        <TextView
+            android:id="@+id/TextView_LogActivity_log"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4.5"
+            android:gravity="center_vertical"
+            android:padding="5dip"
+            android:text="@string/log_labelStr"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shugang"
+            />
+        <TextView
+            android:id="@+id/TextView_LogActivity_toRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="7dip"
+            android:paddingRight="15dip"
+            android:text="@string/register_labelStr"
+            android:textColor="@color/white"
+            android:textSize="20dip"
+            android:background="@drawable/log_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="30dip" >
+		<EditText
+            android:id="@+id/EditText_LogActivity_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/log_accountEditText_defaultStr"
+            android:textColor="@color/edittext_backtxt_color"
+            android:textStyle="italic" >
+
+            <requestFocus />
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText_LogActivity_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:inputType="textVisiblePassword"
+                android:text="@string/log_pwdEditText_defaultStr"
+                 android:textColor="@color/edittext_backtxt_color"
+                android:textStyle="italic" />
+
+
+
+            <ImageButton
+                android:id="@+id/ImageView_LogActivity_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/eye_selector" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Button_LogActivity_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/register_selector"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/log_labelStr"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/TextView_LogActivity_forgotpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="right|bottom"
+            android:text="@string/log_forgotPwd"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+          
+         />
+    </LinearLayout>
+
+</LinearLayout>

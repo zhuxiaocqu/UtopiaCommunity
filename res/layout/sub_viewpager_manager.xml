@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/conv_backgroud"
+    android:orientation="vertical" 
+    > 
+    <LinearLayout
+    android:id="@+id/LinerLayout_manage_Ad"
+ 	android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+         android:id="@+id/imageview_listview_manaad"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:scaleType="centerCrop"
+         android:src="@drawable/imageview_listview_ad" />
+    </LinearLayout>
+    
+    <TableLayout 
+			 android:id="@+id/Manager_tableLayout" 
+			 android:layout_width="match_parent"
+			 android:layout_height="wrap_content"
+			 android:layout_alignParentLeft="true"
+			 android:layout_below="@id/LinerLayout_manage_Ad"
+			 android:layout_margin="10dip" > 
+    <TableRow 
+        android:layout_weight="1">
+	<RelativeLayout 
+	 android:id="@+id/mana_Info_RelativeLayout "
+     style="@style/sub_view_pager_manager ">
+      <ImageView
+		    android:id="@+id/mana_info_view"
+		    android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+		    android:background="@drawable/mana_info_view"  />
+	        
+	     <TextView
+	         android:id="@+id/text_mana_info_view"
+	         style="@style/sub_view_pager_manager_textview "
+	         android:text="@string/text_mana_info_view"  />
+	    
+
+	</RelativeLayout>
+	<RelativeLayout 
+	 	android:id="@+id/mana_call_RelativeLayout "
+    	style="@style/sub_view_pager_manager ">
+   
+	     <ImageView
+            android:id="@+id/mana_call_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"      
+            android:background="@drawable/mana_call_view" />
+        <TextView
+            android:id="@+id/text_mana_call_view"
+            style="@style/sub_view_pager_manager_textview "
+            android:layout_alignParentRight="true"
+            android:text="@string/text_mana_call_view" />
+
+       
+ </RelativeLayout>
+	
+   </TableRow>
+   <TableRow
+	    android:layout_weight="1">
+
+	 <RelativeLayout 
+	 	android:id="@+id/mana_comp_RelativeLayout "
+    	style="@style/sub_view_pager_manager ">
+        
+        <ImageView
+            android:id="@+id/mana_comp_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"      
+            android:background="@drawable/mana_comp_view" /> 
+        <TextView 
+	        android:id="@+id/text_mana_comp_view"
+	        style="@style/sub_view_pager_manager_textview "
+	         android:text="@string/text_mana_comp_view"   />
+  
+	</RelativeLayout>
+	 <RelativeLayout
+	     android:id="@+id/mana_bill_RelativeLayout "
+	     style="@style/sub_view_pager_manager " >
+         <ImageView
+	         android:id="@+id/mana_bill_view"
+	         android:layout_width="fill_parent"
+             android:layout_height="fill_parent" 
+	         android:background="@drawable/mana_bill_view" />
+	     <TextView
+	         android:id="@+id/text_mana_bill_view"
+	         style="@style/sub_view_pager_manager_textview "
+	         android:text="@string/text_mana_bill_view" />
+
+	    
+	 </RelativeLayout>
+
+	</TableRow>
+</TableLayout>
+ 
+</RelativeLayout>

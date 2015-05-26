@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.utopia.structs.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+  <RelativeLayout
+        android:id="@+id/manager_copm_relativelay"
+        style="@style/sub_top_style"  >
+
+        <ImageView
+            android:id="@+id/ImageView_manager_comp_conc_butt"
+            style="@style/returnbutton_style" />
+
+        <TextView
+            android:id="@+id/TextView_manager_comp_sent_view"
+            style="@style/sub_top_text_style" 
+            android:text="@string/textView_manager_comp"  />
+    </RelativeLayout>
+
+  <!--   <RelativeLayout
+        android:id="@+id/manager_copm_time_relativeLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" 
+            android:text="2013.5.12"/>
+    </RelativeLayout>
+     -->
+    <ListView
+        android:id="@+id/manager_listview_talk_record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="@drawable/mm_chat_listitem"
+        android:scrollbars="vertical"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_msg_bg"
+        android:orientation="horizontal"
+        android:paddingRight="7.0dip" >
+
+        <ImageView
+            android:id="@+id/manager_imageview_sms_button_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="5.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="7.0dip"
+            android:paddingTop="5.0dip"
+            android:src="@drawable/sms_insert_selector" />
+
+        <EditText
+            android:id="@+id/manager_comp_cont_view"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginRight="7.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/sms_embeded_text_editor_bg"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="输入消息"
+            android:minHeight="34.0dip"
+             >
+        </EditText>
+
+        <Button
+            android:id="@+id/manager_comp_sent_butt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/mana_comp_sent"
+            android:gravity="center"
+            android:paddingLeft="11.0dip"
+            android:paddingRight="11.0dip"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/talk_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/manager_capture_image"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/media_msg_bg"
+            android:paddingLeft="18.0dip"
+            android:paddingRight="18.0dip"
+            android:src="@drawable/capture_image" />
+
+        <LinearLayout
+            android:id="@+id/manager_recording"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:background="@drawable/hold_to_talk_bg" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="1.0dip"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:id="@+id/manager_pls_talk"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4.0"
+                android:drawableLeft="@drawable/talk_mic_normal"
+                android:gravity="center"
+                android:text="按住说话"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="1.0dip"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/manager_message_record_image"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/media_msg_bg"
+            android:paddingLeft="18.0dip"
+            android:paddingRight="18.0dip"
+            android:src="@drawable/chattinghistory" />
+
+        <ImageView
+            android:id="@+id/manager_send_image"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/media_msg_bg"
+            android:paddingLeft="18.0dip"
+            android:paddingRight="18.0dip"
+            android:src="@drawable/pick_image" />
+    </LinearLayout>
+
+</com.utopia.structs.ResizeLayout>

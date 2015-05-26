@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0" >
+
+    <RelativeLayout
+        android:id="@+id/relative_title"
+        style="@style/sub_top_style" >
+
+        <TextView
+            style="@style/sub_top_text_style"
+            android:text="@string/app_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radiobutton_main_news"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_news_unchecked"
+                android:tag="guide"
+                android:text="@string/RadioButton1" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_main_manager"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/tab_manager_unchecked"
+                android:tag="map"
+                android:text="@string/RadioButton2" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_main_serve"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/tab_serve_unchecked"
+                android:tag="more"
+                android:text="@string/RadioButton3" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_main_mail"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/tab_mail_unchecked"
+                android:tag="love"
+                android:text="@string/RadioButton4" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_main_settings"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/tab_settings_unchecked"
+                android:tag="more"
+                android:text="@string/RadioButton5" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/liner"
+        android:layout_below="@id/relative_title" />
+
+</RelativeLayout>

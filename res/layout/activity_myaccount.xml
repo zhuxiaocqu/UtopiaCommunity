@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3cbc6" >
+    <RelativeLayout
+        android:id="@+id/relative_setting_account_fristly"
+        style="@style/sub_top_style"  >
+
+        <ImageView
+            android:id="@+id/ImageView_setting_account_back"
+            style="@style/returnbutton_style" />
+
+        <TextView
+            android:id="@+id/setting_account_view"
+            style="@style/sub_top_text_style"          
+            android:text="@string/setting_account_view" />
+
+    </RelativeLayout>
+    <ImageView 
+        android:id="@+id/imageview_setting_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="20dip"
+        android:layout_below="@id/relative_setting_account_fristly"
+        android:src="@drawable/myaccout_head"
+        />
+     <LinearLayout
+            android:id="@+id/linear_setting_account_firstly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:layout_below="@+id/imageview_setting_account"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relative_setting_account_secondlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg_unchecked"
+                android:minHeight="@dimen/setting_list_minheight">
+
+                <TextView
+                    android:id="@+id/textview_setting_account_account"
+                    style="@style/activity_myaccout_lefttext_style"
+                    android:text="@string/account"
+                    />
+
+                <TextView
+                    android:id="@+id/imageview_setting_account_accountvalue"
+                    style="@style/activity_myaccout_righttext_style"
+                    />
+            </RelativeLayout>
+
+              <RelativeLayout
+                android:id="@+id/relative_setting_account_thirdlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg_unchecked"
+                android:minHeight="@dimen/setting_list_minheight" >
+
+              <TextView
+                    android:id="@+id/textview_setting_account_doornum"
+                    style="@style/activity_myaccout_lefttext_style"
+                    android:text="@string/doornum"
+                   />
+
+                <TextView
+                    android:id="@+id/imageview_setting_account_doornumvalue"
+                    style="@style/activity_myaccout_righttext_style"
+                    />
+            </RelativeLayout>
+
+              <RelativeLayout
+                android:id="@+id/relative_setting_account_forthlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg_unchecked"
+                android:minHeight="@dimen/setting_list_minheight">
+
+                <TextView
+                    android:id="@+id/textview_setting_account_sex"
+                    style="@style/activity_myaccout_lefttext_style"
+                    android:text="@string/sex1"/>
+
+                <TextView
+                    android:id="@+id/imageview_setting_account_sexvalue"
+                    style="@style/activity_myaccout_righttext_style"
+                    />
+            </RelativeLayout>
+            </LinearLayout>
+    
+     <LinearLayout
+            android:id="@+id/linear_setting_account_secondly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:layout_below="@id/linear_setting_account_firstly"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relative_setting_account_fivelay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg_unchecked"
+                android:minHeight="@dimen/setting_list_minheight">
+
+                <TextView
+                    android:id="@+id/textview_setting_account_phone"
+                    style="@style/activity_myaccout_lefttext_style"
+                    android:text="@string/telephone"
+                 />
+
+                <TextView
+                    android:id="@+id/imageview_setting_account_phonevalue"
+                    style="@style/activity_myaccout_righttext_style"
+                    />
+            </RelativeLayout>
+
+              <RelativeLayout
+                android:id="@+id/relative_setting_account_sixlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg_unchecked"
+                 android:minHeight="@dimen/setting_list_minheight">
+
+              <TextView
+                    android:id="@+id/textview_setting_account_imel"
+                    style="@style/activity_myaccout_lefttext_style"
+                    android:text="@string/Email" />
+
+                <TextView
+                    android:id="@+id/imageview_setting_account_imelvalue"
+                    style="@style/activity_myaccout_righttext_style"
+                    />
+            </RelativeLayout>
+
+              <RelativeLayout
+                android:id="@+id/relative_setting_account_sevenlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg_unchecked"
+                android:minHeight="@dimen/setting_list_minheight">
+
+                <TextView
+                    android:id="@+id/textview_setting_account_address"
+                    style="@style/activity_myaccout_lefttext_style"
+                    android:text="@string/address" />
+
+                <TextView
+                    android:id="@+id/imageview_setting_account_addressvalue"
+                    style="@style/activity_myaccout_righttext_style"
+                    />
+            </RelativeLayout>
+            </LinearLayout>
+    </RelativeLayout>

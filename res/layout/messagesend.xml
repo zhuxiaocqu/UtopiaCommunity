@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageview_talk_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/me" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imageview_talk_send"
+            android:paddingLeft="15dip" >
+
+            <TextView
+                android:id="@+id/textview_talk_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatto_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="left|center"
+                android:paddingBottom="20dip"
+                android:paddingTop="15dip"
+                android:textColor="#000000"
+                android:textSize="18dip" />
+           
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

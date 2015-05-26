@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotCityActivity"
+    android:background="@color/white" >
+     <RelativeLayout
+        android:id="@+id/relative_setting_noticeset"
+        style="@style/sub_top_style"  >
+         <ImageView
+            android:id="@+id/ImageView_setting_noticeset_back"
+            style="@style/returnbutton_style" />
+
+        <TextView
+            android:id="@+id/testview_setting_noticeset_view"
+            style="@style/sub_top_text_style"          
+            android:text="@string/app_name"
+            />
+
+
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/relative_setting_noticeset_secondlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:layout_below="@id/relative_setting_noticeset" >       
+     <TextView
+          android:id="@+id/textview_setting_noticeset_detailinfo" 
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content"
+             android:text="@string/textview_setting_noticeset" 
+             android:textColor="@color/black"
+             android:textSize="15dip" 
+            />
+            
+        <TextView
+             android:id="@+id/textview_setting_noticeset_detailinfotime"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/textview_setting_noticeset_detailinfo"
+             android:textSize="8dip" />
+
+    </RelativeLayout>
+    <RelativeLayout
+    android:id="@+id/relative_setting_noticeset_thirdlay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/relative_setting_noticeset_secondlay"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip">
+
+            <ImageView
+                android:id="@+id/imageview_setting_noticeset_newsshow_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                 />
+             <TextView
+                android:id="@+id/textview_setting_noticeset_newsshow_cont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageview_setting_noticeset_newsshow_pic"
+             	android:textSize="12dip" 
+             	android:textColor="@color/black"
+             	/>
+        </RelativeLayout>
+    </RelativeLayout>
+    

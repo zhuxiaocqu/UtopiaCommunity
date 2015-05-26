@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/conv_backgroud"
+    android:orientation="vertical"
+    android:paddingBottom="8dip"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dip"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Takeout"
+        style="@style/sub_view_pager_convtools_relative "
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/ImageView_MainAcitvity_Takeout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/conv_takeout" />
+
+        <TextView
+            android:id="@+id/textViewTakeout"
+            style="@style/sub_view_pager_convtools_textview "
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@+id/ImageView_MainAcitvity_Takeout"
+            android:layout_alignLeft="@+id/ImageView_MainAcitvity_Takeout"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="18dp"
+            android:text="@string/takeout" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/RelativeLayout_MedicalTakeout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout_Takeout"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_Medical"
+            style="@style/sub_view_pager_convtools_relative "
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ImageView_MainAcitvity_Medical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/conv_medical"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textViewMedical"
+                style="@style/sub_view_pager_convtools_textview "
+                android:layout_alignBottom="@+id/ImageView_MainAcitvity_Medical"
+                android:layout_alignLeft="@+id/ImageView_MainAcitvity_Medical"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="19dp"
+                android:text="@string/medical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_Market"
+            style="@style/sub_view_pager_convtools_relative "
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ImageView_MainAcitvity_Market"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/conv_market"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textViewMarket"
+                style="@style/sub_view_pager_convtools_textview "
+                android:layout_alignRight="@+id/ImageView_MainAcitvity_Market"
+                android:layout_alignTop="@+id/ImageView_MainAcitvity_Market"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/market" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Service"
+        style="@style/sub_view_pager_convtools_relative "
+        android:layout_below="@+id/RelativeLayout_MedicalTakeout"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/ImageView_MainAcitvity_Service"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/conv_service" />
+
+        <TextView
+            android:id="@+id/textViewService"
+            style="@style/sub_view_pager_convtools_textview "
+            android:layout_alignLeft="@+id/ImageView_MainAcitvity_Service"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/service" />
+    </RelativeLayout>
+
+</LinearLayout>

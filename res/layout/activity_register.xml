@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/sub_top_style" >
+
+            <ImageView
+                android:id="@+id/ImageView_RegisterActivity_backToLog"
+                style="@style/returnbutton_style"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="2dip"
+                android:src="@drawable/shugang" />
+
+            <TextView
+                android:id="@+id/TextView_RegisterActivity_quickRegister"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4.5"
+                android:gravity="center_vertical"
+                android:padding="5dip"
+                android:text="@string/register_quickRegister"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="2dip"
+                android:src="@drawable/shugang" />
+
+            <TextView
+                android:id="@+id/TextView_RegisterActivity_toLog"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/log_selector"
+                android:gravity="center"
+                android:paddingLeft="7dip"
+                android:paddingRight="15dip"
+                android:text="@string/log_labelStr"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="30dip" >
+
+                <!-- account -->
+
+                <EditText
+                    android:id="@+id/EditText_RegisterActivity_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/register_accountEditText_defaultStr"
+                    android:textColor="@color/edittext_backtxt_color"
+                    android:textStyle="italic" />
+                <!-- password -->
+
+                <EditText
+                    android:id="@+id/EditText_RegisterActivity_pwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_pwdEditText_defaultStr"
+                    android:textColor="@color/edittext_backtxt_color"
+                    android:textStyle="italic" />
+
+                <!-- ackpassword -->
+
+                <EditText
+                    android:id="@+id/EditText_RegisterActivity_ackpwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_ackpwdEditText_defaultStr"
+                    android:textColor="@color/edittext_backtxt_color"
+                    android:textStyle="italic" />
+                <!-- groupid -->
+
+                <EditText
+                    android:id="@+id/EditText_RegisterActivity_groupid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_groupidEditText_defaultStr"
+                    android:textColor="@color/edittext_backtxt_color"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/EditText_RegisterActivity_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_nameEditText_defaultStr"
+                    android:textColor="@color/edittext_backtxt_color"
+                    android:textStyle="italic" />
+
+                <!-- sex -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                    <RadioGroup
+                        android:id="@+id/RadioGroup_RegisterActivity_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioGroup_RegisterActivity_sex_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/male"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/RadioGroup_RegisterActivity_sex_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/female"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/RadioGroup_RegisterActivity_sex_secret"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/secret"
+                            android:textColor="@color/black" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <!-- phonenumber -->
+
+                <EditText
+                    android:id="@+id/EditText_RegisterActivity_phoneNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_phoneNumberEditText_defaultStr"
+                    android:textColor="@color/edittext_backtxt_color"
+                    android:textStyle="italic" />
+                <!-- imei -->
+
+
+                <!-- address -->
+
+                <EditText
+                    android:id="@+id/EditText_RegisterActivity_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_addressEditText_defaultStr"
+                    android:textColor="@color/edittext_backtxt_color"
+                    android:textStyle="italic" />
+
+                <Button
+                android:id="@+id/Button_RegisterActivity_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_selector"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="@string/register_finishRegister"
+                android:textColor="@color/white"
+                android:textSize="20dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

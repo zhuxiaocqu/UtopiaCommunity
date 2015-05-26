@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dip"
+    android:background="@drawable/sub_viewpager_settings_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relative_settings_firstlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sub_viewpager_settings_list_bg"
+        android:minHeight="@dimen/setting_list_minheight" >
+
+        <TextView
+            android:id="@+id/textview_settings_firstlay"
+            style="@style/activity_myaccout_lefttext_style"
+            android:text="@string/sub_viewpager_setting_myaccount" />
+
+        <ImageView
+            android:id="@+id/imageview_settings_firstlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dip"
+            android:src="@drawable/settings_list_image" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_settings_secondlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_settings_firstlay"
+        android:layout_marginTop="20dip"
+        android:background="#eeeeee" >
+
+        <LinearLayout
+            android:id="@+id/linear_settings_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relative_settings_secondlay_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg"
+                android:minHeight="@dimen/setting_list_minheight" >
+
+                <TextView
+                    android:id="@+id/textview_settings_secondlay_normal"
+                    style="@style/activity_myaccout_lefttext_style"
+                    android:text="@string/sub_viewpager_setting_normal" />
+
+                <ImageView
+                    android:id="@+id/imageview_settings_secondlay_norml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/settings_list_image" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_settings_secondlay_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg"
+                android:minHeight="@dimen/setting_list_minheight" >
+
+                <TextView
+                    android:id="@+id/textview_settings_secondlay_notice"
+                    style="@style/activity_myaccout_lefttext_style"
+                    android:text="@string/sub_viewpager_setting_notice" />
+
+                <ImageView
+                    android:id="@+id/imageview_settings_secondlay_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/settings_list_image" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_settings_secondlay_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg"
+                android:minHeight="@dimen/setting_list_minheight" >
+
+                <TextView
+                    android:id="@+id/textview_settings_secondlay_clear"
+                    style="@style/activity_myaccout_lefttext_style"
+                    android:text="@string/sub_viewpager_setting_clear" />
+
+                <ImageView
+                    android:id="@+id/imageview_settings_secondlay_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/settings_list_image" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_settings_thirdlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_settings_secondlay"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/sub_viewpager_settings_list_bg"
+        android:minHeight="@dimen/setting_list_minheight" >
+
+        <TextView
+            android:id="@+id/textview_settings_thirdlay"
+            style="@style/activity_myaccout_lefttext_style"
+            android:text="@string/sub_viewpager_setting_aboutilive" />
+
+        <ImageView
+            android:id="@+id/imageview_settings_thirdlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dip"
+            android:src="@drawable/settings_list_image" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_settings_forthlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_settings_thirdlay"
+        android:layout_marginTop="20dip"
+       >
+
+        <Button
+            android:id="@+id/button_settings_forthlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/setting_list_minheight"
+            android:background="@drawable/exitregister_seletor"
+            android:text="@string/exitload"
+            style="@style/sub_top_text_style"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

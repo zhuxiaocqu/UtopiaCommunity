@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/relativelay_show_conv_tools_top"
+        style="@style/sub_top_style"  >
+
+        <ImageView
+            android:id="@+id/ImageView_manager_bill_conc_butt"
+            style="@style/returnbutton_style" />
+
+        <TextView
+            android:id="@+id/TextView_manager_bill_view"
+            style="@style/sub_top_text_style" 
+            android:text="@string/buttontext_store_look" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+           android:id="@+id/relativelay_store_pic"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			android:layout_marginTop="10dip"
+    		android:layout_below="@id/relativelay_show_conv_tools_top">
+            <ImageView
+                android:id="@+id/imageview_store_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/huoguo"
+                 />
+   </RelativeLayout>
+   <LinearLayout 
+       android:id="@+id/relativelay_show_conv_tools_detail"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_margin="10dip"
+       android:padding="5dip"
+       android:layout_below="@id/relativelay_store_pic"
+       android:orientation="vertical"
+       android:background="@color/show_conv_tools_bg"
+       >      
+       <RelativeLayout
+        android:id="@+id/relativeLay_store_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+         <TextView
+            android:id="@+id/text_store_name"
+            style="@style/show_conv_tools_text "
+            android:text="@string/show_conv_tools_store_name" />
+
+         <TextView
+             android:id="@+id/text_store_nameview"
+              style="@style/show_conv_tools_textview "
+             android:layout_toRightOf="@id/text_store_name" 
+             android:text="贵州牛羊肉米粉 " />        
+        </RelativeLayout>
+               
+        <RelativeLayout
+        android:id="@+id/relativeLay_store_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+        	<TextView
+            android:id="@+id/text_store_info"
+            style="@style/show_conv_tools_text "
+            android:text="@string/show_conv_tools_store_info" />   
+       		<TextView
+             android:id="@+id/text_store_infoview"
+             style="@style/show_conv_tools_textview "
+             android:layout_toRightOf="@id/text_store_info" 
+             android:text="民间小吃，快餐店，专营面食，小米，米线，酸辣粉" />     
+       </RelativeLayout>
+       
+       <RelativeLayout 
+            android:id="@+id/relativeLay_store_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+            android:id="@+id/text_store_time"
+            style="@style/show_conv_tools_text "
+            android:text="@string/show_conv_tools_store_time" /> 
+            <TextView
+             android:id="@+id/text_store_timeview"
+             style="@style/show_conv_tools_textview " 
+             android:layout_toRightOf="@id/text_store_time"  
+             android:text="周一至周五：上午8:00——晚上8:00；周末：上午9:00——晚上10:00"      />     
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/relativeLay_store_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+            android:id="@+id/text_store_tel"
+            style="@style/show_conv_tools_text "
+            android:text="@string/show_conv_tools_store_tel" /> 
+             <TextView
+             android:id="@+id/text_store_telview"
+             style="@style/show_conv_tools_textview " 
+             android:layout_toRightOf="@id/text_store_tel"  
+             android:text="023—123456 " />
+        </RelativeLayout>
+       <RelativeLayout 
+            android:id="@+id/relativeLay_store_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           >
+             <TextView
+            android:id="@+id/text_store_address"
+            style="@style/show_conv_tools_text "
+            android:text="@string/show_conv_tools_store_address" /> 
+            <TextView
+             android:id="@+id/text_store_addressview"
+             style="@style/show_conv_tools_textview " 
+             android:layout_toRightOf="@id/text_store_address"  
+             android:text="重庆大学中门旁边 " />
+       </RelativeLayout>
+       <RelativeLayout 
+            android:id="@+id/relativeLay_store_advice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           >
+            <TextView
+            android:id="@+id/text_store_advice"
+            style="@style/show_conv_tools_text "
+            android:text="@string/show_conv_tools_store_advice" /> 
+       </RelativeLayout>
+       <LinearLayout 
+           android:id="@+id/linearlayout_store_product"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+            <TextView
+            android:id="@+id/text_store_product_name"
+            style="@style/show_conv_tools_text "
+            android:text="@string/show_conv_tools_store_product"
+            android:layout_weight="1" 
+            android:textColor="@color/black"/> 
+            <TextView
+            android:id="@+id/text_store_product_price"
+            style="@style/show_conv_tools_textview "
+            android:text="@string/show_conv_tools_store_price"
+            android:gravity="center"
+            android:layout_weight="1" /> 
+           
+       </LinearLayout>
+       
+        <ListView
+        android:id="@+id/show_conv_tools_market"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    </LinearLayout> 
+</RelativeLayout>

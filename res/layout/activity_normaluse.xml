@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sub_viewpager_settings_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relative_setting_normal_fristly"
+        style="@style/sub_top_style" >
+
+        <ImageView
+            android:id="@+id/ImageView_setting_normal_back"
+            style="@style/returnbutton_style" />
+
+        <TextView
+            android:id="@+id/setting_normal_view"
+            style="@style/sub_top_text_style"
+            android:text="@string/RadioButton5" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_setting_normal_firstly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_setting_normal_fristly"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <RelativeLayout
+            android:id="@+id/relative_setting_normal_secondly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sub_viewpager_settings_list_bg"
+            android:minHeight="@dimen/setting_list_minheight" >
+
+            <TextView
+                android:id="@+id/textview_setting_normal_remind"
+                style="@style/activity_myaccout_lefttext_style"
+                android:text="@string/activity_normaluse_text_remind" />
+
+            <ImageView
+                android:id="@+id/imageview_setting_norml_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dip"
+                android:src="@drawable/setting_normal_remind" />
+            <!--
+            <CheckBox
+                android:id="@+id/checkbox_setting_norml_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dip" >
+            </CheckBox>
+            -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_setting_normal_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sub_viewpager_settings_list_bg"
+            android:minHeight="@dimen/setting_list_minheight">
+
+            <TextView
+                android:id="@+id/textview_setting_normal_receive"
+                style="@style/activity_myaccout_lefttext_style"
+                android:text="@string/activity_normaluse_text_receive" />
+
+            <CheckBox
+                android:id="@+id/imageview_setting_normal_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/setting_normal_button"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_setting_normal_sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sub_viewpager_settings_list_bg" 
+            android:minHeight="@dimen/setting_list_minheight">
+
+            <TextView
+                android:id="@+id/textview_settings_normal_sound"
+                style="@style/activity_myaccout_lefttext_style"
+                android:text="@string/activity_normaluse_text_sound" />
+
+            <CheckBox
+                android:id="@+id/imageview_settings_nor_mal_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/setting_normal_button"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_setting_normal_shaken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sub_viewpager_settings_list_bg" 
+            android:minHeight="@dimen/setting_list_minheight">
+
+            <TextView
+                android:id="@+id/textview_settings_normal_shaken"
+                style="@style/activity_myaccout_lefttext_style"
+                android:text="@string/activity_normaluse_text_shaken" />
+
+            <CheckBox
+                android:id="@+id/imageview_settings_nor_mal_shaken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/setting_normal_button"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_setting_normal_nofunc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sub_viewpager_settings_list_bg" 
+            android:minHeight="@dimen/setting_list_minheight">
+
+            <TextView
+                android:id="@+id/textview_settings_normal_nofunc"
+                style="@style/activity_myaccout_lefttext_style"
+                android:text="@string/activity_normaluse_text_nofunc" />
+
+            <CheckBox
+                android:id="@+id/imageview_settings_nor_mal_nofunc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/setting_normal_button"
+                android:button="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_setting_normal_secondly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_setting_normal_firstly"
+        android:orientation="vertical"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip" >
+
+        <RelativeLayout
+            android:id="@+id/relative_setting_normal_thirdly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sub_viewpager_settings_list_bg"
+            android:minHeight="@dimen/setting_list_minheight">
+
+            <TextView
+                android:id="@+id/textview_setting_normal_infosort"
+                style="@style/activity_myaccout_lefttext_style"
+                android:text="@string/activity_normaluse_text_infosort" />
+
+            <ImageView
+                android:id="@+id/imageview_setting_norml_infosort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dip"
+                android:src="@drawable/setting_normal_remind" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/radiogroup_newssort_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radiobutton_sort_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:paddingLeft="15dip"
+                android:paddingRight="10dip"
+                android:text="@string/activity_normaluse_text_timesort"
+                android:textColor="@color/black" 
+                android:minHeight="@dimen/setting_list_minheight"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_sort_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sub_viewpager_settings_list_bg"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:paddingLeft="15dip"
+                android:paddingRight="10dip"
+                android:text="@string/activity_normaluse_text_stylesort"
+                android:textColor="@color/black" 
+                android:minHeight="@dimen/setting_list_minheight"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>
